@@ -3,36 +3,34 @@ name: docs
 on:
   pull_request:
     paths:
-      - ".github/workflows/site.yaml"
-      - "site/**"
+      - '.github/workflows/site.yaml'
+      - 'site_jaspr/**'
 
 jobs:
   build:
+    name: Build
+
     runs-on: ubuntu-latest
 
     defaults:
       run:
-        working-directory: site
+        working-directory: site_jaspr
 
     steps:
       - name: 📚 Git Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
-      - name: ⚙️ Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 20.x
-          cache: npm
-          cache-dependency-path: site/package-lock.json
+      - name: ⚙️ Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: 📦 Install Jaspr CLI
+        run: dart pub global activate jaspr_cli
 
       - name: 📦 Install Dependencies
-        run: npm ci
+        run: dart pub get
 
-      - name: ✨ Check Format
-        run: npm run format:check
+      - name: 🔍 Analyze
+        run: dart analyze lib/
 
-      - name: 🧹 Lint
-        run: npm run lint
-
-      - name: 👷 Build website
-        run: npm run build
+      - name: 👷 Build
+        run: jaspr build --verbose
