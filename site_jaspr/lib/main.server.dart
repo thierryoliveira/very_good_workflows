@@ -16,7 +16,6 @@ import 'package:jaspr_content/jaspr_content.dart';
 
 import 'package:very_good_jaspr/very_good_jaspr.dart';
 
-// This file is generated automatically by Jaspr, do not remove or edit.
 import 'main.server.options.dart';
 
 void main() {
