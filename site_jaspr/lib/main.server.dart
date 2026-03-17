@@ -76,7 +76,7 @@ void main() {
           ),
           sidebar: CollapsibleSidebar(
             mobileNavItems: [
-              a(href: '/docs/overview', classes: 'mobile-logo-btn', [
+              a(href: 'docs/overview', classes: 'mobile-logo-btn', [
                 img(
                   src: '/images/workflows_nav_icon.svg',
                   alt: 'Very Good Workflows',
@@ -86,7 +86,7 @@ void main() {
               ThemeToggle(),
             ],
             primaryNavItems: [
-              a(href: '/docs/overview', classes: 'sidebar-link', [
+              a(href: 'docs/overview', classes: 'sidebar-link', [
                 Component.text('Get Started'),
               ]),
               a(
@@ -139,7 +139,7 @@ void main() {
               SidebarEntry(text: 'Overview', href: '/docs/overview'),
               SidebarEntry(
                 text: 'Workflows',
-                href: '/docs/workflows',
+                href: 'docs/workflows',
                 autoChildren: true,
               ),
             ],
@@ -162,7 +162,7 @@ void main() {
           heroLogoDark: '/images/workflows_logo_dark.svg',
           heroSubtitle:
               'A collection of helpful, reusable GitHub workflows used by VGV.',
-          ctaHref: '/docs/overview',
+          ctaHref: 'docs/overview',
           ctaLabel: 'Get Started',
           githubUrl:
               'https://github.com/VeryGoodOpenSource/very_good_workflows',
