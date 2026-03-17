@@ -163,6 +163,7 @@ void main() {
           heroSubtitle:
               'A collection of helpful, reusable GitHub workflows used by VGV.',
           ctaHref: 'docs/overview',
+          getStartedHref: 'docs/overview',
           ctaLabel: 'Get Started',
           githubUrl:
               'https://github.com/VeryGoodOpenSource/very_good_workflows',
