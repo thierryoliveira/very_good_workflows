@@ -1,6 +1,6 @@
 name: site_jaspr
 description: Very Good Workflows documentation site built with Jaspr
-version: 0.0.1
+version: 0.0.2
 publish_to: none
 
 environment:
