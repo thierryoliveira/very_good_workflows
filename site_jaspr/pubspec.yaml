@@ -16,7 +16,6 @@ dependencies:
     git:
       url: https://github.com/VeryGoodOpenSource/very_good_jaspr
       ref: fix/absoluteToRelativePaths
-#    path: /Users/john/AndroidStudioProjects/very_good_jaspr
 
 dev_dependencies:
   build_runner: ^2.10.0
