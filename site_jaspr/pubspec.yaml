@@ -15,6 +15,7 @@ dependencies:
   very_good_jaspr:
     git:
       url: https://github.com/VeryGoodOpenSource/very_good_jaspr
+      ref: fix/absoluteToRelativePaths
 
 dev_dependencies:
   build_runner: ^2.10.0
