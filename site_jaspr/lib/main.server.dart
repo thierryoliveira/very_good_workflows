@@ -136,10 +136,10 @@ void main() {
               ),
             ],
             items: [
-              SidebarEntry(text: 'Overview', href: 'docs/overview'),
+              SidebarEntry(text: 'Overview', href: '/docs/overview'),
               SidebarEntry(
                 text: 'Workflows',
-                href: 'docs/workflows',
+                href: '/docs/workflows',
                 autoChildren: true,
               ),
             ],
