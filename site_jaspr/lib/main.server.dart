@@ -47,7 +47,7 @@ void main() {
         DocsLayout(
           header: Header(
             title: 'Very Good Workflows',
-            logo: '/images/workflows_nav_icon.svg',
+            logo: 'images/workflows_nav_icon.svg',
             items: [
               NavLink(
                 text: 'Get Started',
@@ -60,15 +60,15 @@ void main() {
               ),
               const IconLink(
                 href: 'https://verygood.ventures',
-                iconSrc: '/images/vgv_logo_black.svg',
-                darkIconSrc: '/images/vgv_logo_fill.svg',
+                iconSrc: 'images/vgv_logo_black.svg',
+                darkIconSrc: 'images/vgv_logo_fill.svg',
                 alt: 'Very Good Ventures',
               ),
               const IconLink(
                 href:
                     'https://github.com/VeryGoodOpenSource/very_good_workflows',
-                iconSrc: '/images/github.svg',
-                darkIconSrc: '/images/github_white.svg',
+                iconSrc: 'images/github.svg',
+                darkIconSrc: 'images/github_white.svg',
                 alt: 'GitHub',
               ),
               ThemeToggle(),
@@ -78,7 +78,7 @@ void main() {
             mobileNavItems: [
               a(href: 'docs/overview', classes: 'mobile-logo-btn', [
                 img(
-                  src: '/images/workflows_nav_icon.svg',
+                  src: 'images/workflows_nav_icon.svg',
                   alt: 'Very Good Workflows',
                   attributes: const {'height': '32', 'width': '105'},
                 ),
@@ -102,13 +102,13 @@ void main() {
                 [
                   img(
                     classes: 'sidebar-icon-light',
-                    src: '/images/vgv_logo_black.svg',
+                    src: 'images/vgv_logo_black.svg',
                     alt: 'Very Good Ventures',
                     attributes: const {'width': '24', 'height': '24'},
                   ),
                   img(
                     classes: 'sidebar-icon-dark',
-                    src: '/images/vgv_logo_fill.svg',
+                    src: 'images/vgv_logo_fill.svg',
                     alt: 'Very Good Ventures',
                     attributes: const {'width': '24', 'height': '24'},
                   ),
@@ -122,13 +122,13 @@ void main() {
                 [
                   img(
                     classes: 'sidebar-icon-light',
-                    src: '/images/github.svg',
+                    src: 'images/github.svg',
                     alt: 'GitHub',
                     attributes: const {'width': '24', 'height': '24'},
                   ),
                   img(
                     classes: 'sidebar-icon-dark',
-                    src: '/images/github_white.svg',
+                    src: 'images/github_white.svg',
                     alt: 'GitHub',
                     attributes: const {'width': '24', 'height': '24'},
                   ),
@@ -157,9 +157,9 @@ void main() {
         ),
         HomepageLayout(
           title: 'Very Good Workflows',
-          logo: '/images/workflows_nav_icon.svg',
-          heroLogoLight: '/images/workflows_logo.svg',
-          heroLogoDark: '/images/workflows_logo_dark.svg',
+          logo: 'images/workflows_nav_icon.svg',
+          heroLogoLight: 'images/workflows_logo.svg',
+          heroLogoDark: 'images/workflows_logo_dark.svg',
           heroSubtitle:
               'A collection of helpful, reusable GitHub workflows used by VGV.',
           ctaHref: 'docs/overview',
@@ -167,7 +167,7 @@ void main() {
           ctaLabel: 'Get Started',
           githubUrl:
               'https://github.com/VeryGoodOpenSource/very_good_workflows',
-          heroImage: '/images/workflows_hero.png',
+          heroImage: 'images/workflows_hero.png',
           blogSection: div(classes: 'blog-section', [
             div(classes: 'blog-row', [
               div(classes: 'blog-column', [
