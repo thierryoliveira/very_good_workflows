@@ -51,7 +51,7 @@ void main() {
             items: [
               NavLink(
                 text: 'Get Started',
-                href: '/docs/overview',
+                href: 'docs/overview',
                 isButton: true,
               ),
               const NavLink(
@@ -136,7 +136,7 @@ void main() {
               ),
             ],
             items: [
-              SidebarEntry(text: 'Overview', href: '/docs/overview'),
+              SidebarEntry(text: 'Overview', href: 'docs/overview'),
               SidebarEntry(
                 text: 'Workflows',
                 href: 'docs/workflows',
