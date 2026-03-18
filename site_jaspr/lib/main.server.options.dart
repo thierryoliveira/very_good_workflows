@@ -34,8 +34,8 @@ import 'package:very_good_jaspr/src/components/sidebar_toggle.dart'
     as _sidebar_toggle;
 import 'package:very_good_jaspr/src/components/site_footer.dart'
     as _site_footer;
-import 'package:very_good_jaspr/src/components/theme_toggle_fix.dart'
-    as _theme_toggle_fix;
+import 'package:very_good_jaspr/src/components/theme_toggle.dart'
+    as _components_theme_toggle;
 import 'package:very_good_jaspr/src/components/toc_scrollspy.dart'
     as _toc_scrollspy;
 
@@ -80,9 +80,9 @@ ServerOptions get defaultServerOptions => ServerOptions(
     _sidebar_toggle.SidebarToggle: ClientTarget<_sidebar_toggle.SidebarToggle>(
       'very_good_jaspr:sidebar_toggle',
     ),
-    _theme_toggle_fix.ThemeToggleFix:
-        ClientTarget<_theme_toggle_fix.ThemeToggleFix>(
-          'very_good_jaspr:theme_toggle_fix',
+    _components_theme_toggle.ThemeToggle:
+        ClientTarget<_components_theme_toggle.ThemeToggle>(
+          'very_good_jaspr:components/theme_toggle',
         ),
     _toc_scrollspy.TocScrollspy: ClientTarget<_toc_scrollspy.TocScrollspy>(
       'very_good_jaspr:toc_scrollspy',

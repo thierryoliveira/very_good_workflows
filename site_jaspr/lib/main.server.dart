@@ -11,7 +11,6 @@ import 'package:jaspr/server.dart';
 
 import 'package:jaspr_content/components/header.dart';
 import 'package:jaspr_content/components/image.dart';
-import 'package:jaspr_content/components/theme_toggle.dart';
 import 'package:jaspr_content/jaspr_content.dart';
 
 import 'package:very_good_jaspr/very_good_jaspr.dart';

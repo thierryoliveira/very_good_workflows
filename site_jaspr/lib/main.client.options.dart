@@ -18,8 +18,8 @@ import 'package:very_good_jaspr/src/components/footer_relocator.dart'
     deferred as _footer_relocator;
 import 'package:very_good_jaspr/src/components/sidebar_toggle.dart'
     deferred as _sidebar_toggle;
-import 'package:very_good_jaspr/src/components/theme_toggle_fix.dart'
-    deferred as _theme_toggle_fix;
+import 'package:very_good_jaspr/src/components/theme_toggle.dart'
+    deferred as _components_theme_toggle;
 import 'package:very_good_jaspr/src/components/toc_scrollspy.dart'
     deferred as _toc_scrollspy;
 
@@ -69,9 +69,9 @@ ClientOptions get defaultClientOptions => ClientOptions(
       (p) => _sidebar_toggle.SidebarToggle(),
       loader: _sidebar_toggle.loadLibrary,
     ),
-    'very_good_jaspr:theme_toggle_fix': ClientLoader(
-      (p) => _theme_toggle_fix.ThemeToggleFix(),
-      loader: _theme_toggle_fix.loadLibrary,
+    'very_good_jaspr:components/theme_toggle': ClientLoader(
+      (p) => _components_theme_toggle.ThemeToggle(),
+      loader: _components_theme_toggle.loadLibrary,
     ),
     'very_good_jaspr:toc_scrollspy': ClientLoader(
       (p) => _toc_scrollspy.TocScrollspy(),
