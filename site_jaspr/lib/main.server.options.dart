@@ -25,6 +25,7 @@ import 'package:very_good_jaspr/src/components/edit_page_link.dart'
 import 'package:very_good_jaspr/src/components/footer_relocator.dart'
     as _footer_relocator;
 import 'package:very_good_jaspr/src/components/icon_link.dart' as _icon_link;
+import 'package:very_good_jaspr/src/components/mobile_toc.dart' as _mobile_toc;
 import 'package:very_good_jaspr/src/components/nav_link.dart' as _nav_link;
 import 'package:very_good_jaspr/src/components/page_navigation.dart'
     as _page_navigation;
@@ -77,6 +78,9 @@ ServerOptions get defaultServerOptions => ServerOptions(
         ClientTarget<_footer_relocator.FooterRelocator>(
           'very_good_jaspr:footer_relocator',
         ),
+    _mobile_toc.MobileToc: ClientTarget<_mobile_toc.MobileToc>(
+      'very_good_jaspr:mobile_toc',
+    ),
     _sidebar_toggle.SidebarToggle: ClientTarget<_sidebar_toggle.SidebarToggle>(
       'very_good_jaspr:sidebar_toggle',
     ),

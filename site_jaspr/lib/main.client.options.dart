@@ -16,6 +16,8 @@ import 'package:jaspr_content/components/theme_toggle.dart'
     deferred as _theme_toggle;
 import 'package:very_good_jaspr/src/components/footer_relocator.dart'
     deferred as _footer_relocator;
+import 'package:very_good_jaspr/src/components/mobile_toc.dart'
+    deferred as _mobile_toc;
 import 'package:very_good_jaspr/src/components/sidebar_toggle.dart'
     deferred as _sidebar_toggle;
 import 'package:very_good_jaspr/src/components/theme_toggle.dart'
@@ -64,6 +66,10 @@ ClientOptions get defaultClientOptions => ClientOptions(
     'very_good_jaspr:footer_relocator': ClientLoader(
       (p) => _footer_relocator.FooterRelocator(),
       loader: _footer_relocator.loadLibrary,
+    ),
+    'very_good_jaspr:mobile_toc': ClientLoader(
+      (p) => _mobile_toc.MobileToc(),
+      loader: _mobile_toc.loadLibrary,
     ),
     'very_good_jaspr:sidebar_toggle': ClientLoader(
       (p) => _sidebar_toggle.SidebarToggle(),

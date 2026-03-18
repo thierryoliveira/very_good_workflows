@@ -42,7 +42,7 @@ void main() {
         ),
         Image(zoom: true),
       ],
-      layouts: [
+      layouts: const [
         DocsLayout(
           header: Header(
             title: 'Very Good Workflows',
@@ -53,17 +53,17 @@ void main() {
                 href: 'docs/overview',
                 isButton: true,
               ),
-              const NavLink(
+              NavLink(
                 text: 'VGV Dev Tools',
                 href: 'https://verygood.ventures/dev',
               ),
-              const IconLink(
+              IconLink(
                 href: 'https://verygood.ventures',
                 iconSrc: 'images/vgv_logo_black.svg',
                 darkIconSrc: 'images/vgv_logo_fill.svg',
                 alt: 'Very Good Ventures',
               ),
-              const IconLink(
+              IconLink(
                 href:
                     'https://github.com/VeryGoodOpenSource/very_good_workflows',
                 iconSrc: 'images/github.svg',
@@ -79,7 +79,7 @@ void main() {
                 img(
                   src: 'images/workflows_nav_icon.svg',
                   alt: 'Very Good Workflows',
-                  attributes: const {'height': '32', 'width': '105'},
+                  attributes: {'height': '32', 'width': '105'},
                 ),
               ]),
               ThemeToggle(),
@@ -103,13 +103,13 @@ void main() {
                     classes: 'sidebar-icon-light',
                     src: 'images/vgv_logo_black.svg',
                     alt: 'Very Good Ventures',
-                    attributes: const {'width': '24', 'height': '24'},
+                    attributes: {'width': '24', 'height': '24'},
                   ),
                   img(
                     classes: 'sidebar-icon-dark',
                     src: 'images/vgv_logo_fill.svg',
                     alt: 'Very Good Ventures',
-                    attributes: const {'width': '24', 'height': '24'},
+                    attributes: {'width': '24', 'height': '24'},
                   ),
                 ],
               ),
@@ -123,13 +123,13 @@ void main() {
                     classes: 'sidebar-icon-light',
                     src: 'images/github.svg',
                     alt: 'GitHub',
-                    attributes: const {'width': '24', 'height': '24'},
+                    attributes: {'width': '24', 'height': '24'},
                   ),
                   img(
                     classes: 'sidebar-icon-dark',
                     src: 'images/github_white.svg',
                     alt: 'GitHub',
-                    attributes: const {'width': '24', 'height': '24'},
+                    attributes: {'width': '24', 'height': '24'},
                   ),
                 ],
               ),
@@ -144,14 +144,14 @@ void main() {
             ],
           ),
           footer: Component.fragment([
-            const Breadcrumb(),
+            Breadcrumb(),
             EditPageLink(
               editUrlBase:
                   'https://github.com/VeryGoodOpenSource/very_good_workflows/tree/main/site_jaspr/',
-              excludePaths: const {'/', '/docs/workflows'},
+              excludePaths: {'/', '/docs/workflows'},
             ),
-            const PageNavigation(),
-            const SiteFooter(),
+            PageNavigation(),
+            SiteFooter(),
           ]),
         ),
         HomepageLayout(
@@ -174,7 +174,7 @@ void main() {
                   src:
                       'https://uploads-ssl.webflow.com/5ee12d8e99cde2e20255c16c/61ef1d505cfdeb570f714a7f_Very%20good%20workflows.jpg',
                   alt: 'Configuring workflows for your Flutter projects',
-                  attributes: const {'width': '452', 'height': '254'},
+                  attributes: {'width': '452', 'height': '254'},
                 ),
               ]),
               div(classes: 'blog-column', [
