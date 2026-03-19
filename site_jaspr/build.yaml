@@ -6,6 +6,7 @@ targets:
           dart2js_args:
             - --no-source-maps
           compiler: dart2js
+          unsafe-allow-unsupported-modules: true
         dev_options:
           compiler: dartdevc
           unsafe-allow-unsupported-modules: true
