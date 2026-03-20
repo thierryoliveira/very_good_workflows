@@ -12,18 +12,18 @@ import 'package:jaspr_content/components/_internal/zoomable_image.dart'
     deferred as _zoomable_image;
 import 'package:jaspr_content/components/sidebar_toggle_button.dart'
     deferred as _sidebar_toggle_button;
-import 'package:jaspr_content/components/theme_toggle.dart'
-    deferred as _theme_toggle;
-import 'package:very_good_jaspr/src/components/footer_relocator.dart'
+import 'package:very_good_jaspr/components/footer_relocator.dart'
     deferred as _footer_relocator;
-import 'package:very_good_jaspr/src/components/mobile_toc.dart'
+import 'package:very_good_jaspr/components/mobile_toc.dart'
     deferred as _mobile_toc;
-import 'package:very_good_jaspr/src/components/sidebar_toggle.dart'
+import 'package:very_good_jaspr/components/sidebar_toggle.dart'
     deferred as _sidebar_toggle;
-import 'package:very_good_jaspr/src/components/theme_toggle.dart'
-    deferred as _components_theme_toggle;
-import 'package:very_good_jaspr/src/components/toc_scrollspy.dart'
+import 'package:very_good_jaspr/components/toc_scrollspy.dart'
     deferred as _toc_scrollspy;
+import 'package:very_good_jaspr/components/vgv_code_block_copy_button.dart'
+    deferred as _vgv_code_block_copy_button;
+import 'package:very_good_jaspr/components/vgv_theme_toggle.dart'
+    deferred as _vgv_theme_toggle;
 
 /// Default [ClientOptions] for use with your Jaspr project.
 ///
@@ -59,10 +59,6 @@ ClientOptions get defaultClientOptions => ClientOptions(
       (p) => _sidebar_toggle_button.SidebarToggleButton(),
       loader: _sidebar_toggle_button.loadLibrary,
     ),
-    'jaspr_content:theme_toggle': ClientLoader(
-      (p) => _theme_toggle.ThemeToggle(),
-      loader: _theme_toggle.loadLibrary,
-    ),
     'very_good_jaspr:footer_relocator': ClientLoader(
       (p) => _footer_relocator.FooterRelocator(),
       loader: _footer_relocator.loadLibrary,
@@ -75,13 +71,17 @@ ClientOptions get defaultClientOptions => ClientOptions(
       (p) => _sidebar_toggle.SidebarToggle(),
       loader: _sidebar_toggle.loadLibrary,
     ),
-    'very_good_jaspr:components/theme_toggle': ClientLoader(
-      (p) => _components_theme_toggle.ThemeToggle(),
-      loader: _components_theme_toggle.loadLibrary,
-    ),
     'very_good_jaspr:toc_scrollspy': ClientLoader(
       (p) => _toc_scrollspy.TocScrollspy(),
       loader: _toc_scrollspy.loadLibrary,
+    ),
+    'very_good_jaspr:vgv_code_block_copy_button': ClientLoader(
+      (p) => _vgv_code_block_copy_button.VgvCodeBlockCopyButton(),
+      loader: _vgv_code_block_copy_button.loadLibrary,
+    ),
+    'very_good_jaspr:vgv_theme_toggle': ClientLoader(
+      (p) => _vgv_theme_toggle.VgvThemeToggle(),
+      loader: _vgv_theme_toggle.loadLibrary,
     ),
   },
 );

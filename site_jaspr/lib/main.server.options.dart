@@ -14,7 +14,19 @@ import 'package:jaspr_content/components/code_block.dart' as _code_block;
 import 'package:jaspr_content/components/image.dart' as _image;
 import 'package:jaspr_content/components/sidebar_toggle_button.dart'
     as _sidebar_toggle_button;
-import 'package:jaspr_content/components/theme_toggle.dart' as _theme_toggle;
+import 'package:very_good_jaspr/components/footer_relocator.dart'
+    as _footer_relocator;
+import 'package:very_good_jaspr/components/icon_link.dart' as _icon_link;
+import 'package:very_good_jaspr/components/mobile_toc.dart' as _mobile_toc;
+import 'package:very_good_jaspr/components/nav_link.dart' as _nav_link;
+import 'package:very_good_jaspr/components/sidebar_toggle.dart'
+    as _sidebar_toggle;
+import 'package:very_good_jaspr/components/toc_scrollspy.dart'
+    as _toc_scrollspy;
+import 'package:very_good_jaspr/components/vgv_code_block_copy_button.dart'
+    as _vgv_code_block_copy_button;
+import 'package:very_good_jaspr/components/vgv_theme_toggle.dart'
+    as _vgv_theme_toggle;
 import 'package:very_good_jaspr/src/components/breadcrumb.dart' as _breadcrumb;
 import 'package:very_good_jaspr/src/components/collapsible_sidebar.dart'
     as _collapsible_sidebar;
@@ -22,23 +34,12 @@ import 'package:very_good_jaspr/src/components/doc_callout.dart'
     as _doc_callout;
 import 'package:very_good_jaspr/src/components/edit_page_link.dart'
     as _edit_page_link;
-import 'package:very_good_jaspr/src/components/footer_relocator.dart'
-    as _footer_relocator;
-import 'package:very_good_jaspr/src/components/icon_link.dart' as _icon_link;
-import 'package:very_good_jaspr/src/components/mobile_toc.dart' as _mobile_toc;
-import 'package:very_good_jaspr/src/components/nav_link.dart' as _nav_link;
 import 'package:very_good_jaspr/src/components/page_navigation.dart'
     as _page_navigation;
 import 'package:very_good_jaspr/src/components/safe_code_block.dart'
     as _safe_code_block;
-import 'package:very_good_jaspr/src/components/sidebar_toggle.dart'
-    as _sidebar_toggle;
 import 'package:very_good_jaspr/src/components/site_footer.dart'
     as _site_footer;
-import 'package:very_good_jaspr/src/components/theme_toggle.dart'
-    as _components_theme_toggle;
-import 'package:very_good_jaspr/src/components/toc_scrollspy.dart'
-    as _toc_scrollspy;
 
 /// Default [ServerOptions] for use with your Jaspr project.
 ///
@@ -71,9 +72,6 @@ ServerOptions get defaultServerOptions => ServerOptions(
         ClientTarget<_sidebar_toggle_button.SidebarToggleButton>(
           'jaspr_content:sidebar_toggle_button',
         ),
-    _theme_toggle.ThemeToggle: ClientTarget<_theme_toggle.ThemeToggle>(
-      'jaspr_content:theme_toggle',
-    ),
     _footer_relocator.FooterRelocator:
         ClientTarget<_footer_relocator.FooterRelocator>(
           'very_good_jaspr:footer_relocator',
@@ -84,26 +82,29 @@ ServerOptions get defaultServerOptions => ServerOptions(
     _sidebar_toggle.SidebarToggle: ClientTarget<_sidebar_toggle.SidebarToggle>(
       'very_good_jaspr:sidebar_toggle',
     ),
-    _components_theme_toggle.ThemeToggle:
-        ClientTarget<_components_theme_toggle.ThemeToggle>(
-          'very_good_jaspr:components/theme_toggle',
-        ),
     _toc_scrollspy.TocScrollspy: ClientTarget<_toc_scrollspy.TocScrollspy>(
       'very_good_jaspr:toc_scrollspy',
     ),
+    _vgv_code_block_copy_button.VgvCodeBlockCopyButton:
+        ClientTarget<_vgv_code_block_copy_button.VgvCodeBlockCopyButton>(
+          'very_good_jaspr:vgv_code_block_copy_button',
+        ),
+    _vgv_theme_toggle.VgvThemeToggle:
+        ClientTarget<_vgv_theme_toggle.VgvThemeToggle>(
+          'very_good_jaspr:vgv_theme_toggle',
+        ),
   },
   styles: () => [
     ..._zoomable_image.ZoomableImage.styles,
     ..._callout.Callout.styles,
     ..._code_block.CodeBlock.styles,
     ..._image.Image.styles,
-    ..._theme_toggle.ThemeToggleState.styles,
+    ..._icon_link.IconLink.styles,
+    ..._nav_link.NavLink.styles,
     ..._breadcrumb.Breadcrumb.styles,
     ..._collapsible_sidebar.CollapsibleSidebar.styles,
     ..._doc_callout.DocCallout.styles,
     ..._edit_page_link.EditPageLink.styles,
-    ..._icon_link.IconLink.styles,
-    ..._nav_link.NavLink.styles,
     ..._page_navigation.PageNavigation.styles,
     ..._safe_code_block.SafeCodeBlock.styles,
     ..._site_footer.SiteFooter.styles,

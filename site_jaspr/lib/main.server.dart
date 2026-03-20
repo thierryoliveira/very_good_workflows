@@ -70,7 +70,7 @@ void main() {
                 darkIconSrc: 'images/github_white.svg',
                 alt: 'GitHub',
               ),
-              ThemeToggle(),
+              VgvThemeToggle(),
             ],
           ),
           sidebar: CollapsibleSidebar(
@@ -82,7 +82,7 @@ void main() {
                   attributes: {'height': '32', 'width': '105'},
                 ),
               ]),
-              ThemeToggle(),
+              VgvThemeToggle(),
             ],
             primaryNavItems: [
               a(href: 'docs/overview', classes: 'sidebar-link', [
